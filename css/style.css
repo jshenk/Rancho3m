@@ -1,0 +1,10 @@
+.banner {
+	background-image: url('photos/deser.jpg');
+	width: 100%;
+	height: 500px;
+	background-color: blue; 
+}
+
+h1 {
+	color: red;
+}

@@ -1,0 +1,99 @@
+body {
+	margin: 0 auto;
+	padding: 0;
+	font-family: sans-serif;
+	width: 100%;
+
+}
+
+nav {
+	display: block;
+	text-align: right;
+	padding: 20px;
+	font-size: 18px;
+
+}
+.navbar a {
+	color: #fff;
+	text-decoration: none;
+	padding: 15px;
+	
+
+}
+
+.navbar a:hover {
+	border: solid;
+}
+
+.banner {
+	background-image: url("photos/desert.jpg");
+	background-position: center center;
+	background-repeat: no-repeat;
+	background-size: cover;
+	width: 100%;
+	min-height: 500px;
+	height: auto;
+
+
+
+}
+
+.banner h1 {
+	text-align: center;
+	color: #fff;
+	margin-top: 300px;
+	font-size: 50px;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+
+	
+}
+
+.quote {
+	background-color: #FF9900;
+	color: #fff;
+	font-family: 'Roboto', sans-serif;
+	font-weight: 100;
+	text-align: center;
+	margin: 0;
+	padding: 20px;
+}
+
+/*column css */
+
+.column-3 {
+	width: 30%;
+	display: block;
+	height: auto;
+	float: left;
+	text-align: center;
+	margin: 0 auto;
+	position: relative;
+	left: 5%;
+	max-width: 50%;
+
+
+
+}
+
+.column-3 img {
+	width: 100%;
+	height: auto;
+	
+	
+}
+
+.wrapper {
+	max-width: 50%;
+	postion:relative;
+	left: 20%;
+}
+
+/*footer*/
+
+.footer {
+	background-color: #52666b; 
+	color: #fff;
+	clear: both;
+	text-align: center;
+}
