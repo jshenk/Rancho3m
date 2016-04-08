@@ -5,27 +5,28 @@
 body {
 	margin: 0 auto;
 	padding: 0;
-	font-family: sans-serif;
+	font-family: 'Roboto', sans-serif;
 	width: 100%;
-
+	color: #52666b;
 }
 
 nav {
 	display: block;
 	text-align: center;
-	padding: 20px;
+	padding: 0 20px;
 	font-size: 1.5em;
+	
+	font-weight: 100;
 	
 }
 
-.index-nav {
-	background-color: rgba(82, 70, 86, .8);
-
+img {
+	width: 100%;
 }
 
-.about-nav {
-	background-color: rgba(82, 70, 86, 1);
-} 
+
+
+ 
 .fees {
 	font-size: 3vmax;
 }
@@ -36,16 +37,23 @@ nav {
 	font-size: 3vmax;
 	font-style: italic;
 }
+.navbar {
+	background-color:rgba(82, 70, 86, .8);
+}
+
+
 .navbar a {
 	color: #fff;
 	text-decoration: none;
-	padding: 15px;
+	padding: 15px 15px 0 15px;
+	display: block;
+	margin-bottom: 15px;
 	
 
 }
 
 .navbar a:hover {
-	border: solid;
+	border-bottom: solid;
 }
 
 header {
@@ -62,7 +70,7 @@ header {
 	color: #fff;
 	/*background-color:rgba(255, 153, 0, 1);*/
 	background-color: rgba(235,123,89,.8);
-	font-size: 15vmax;
+	font-size: 10vmax;
 	font-family: 'Roboto', sans-serif;
 	font-weight: 100;
 	
@@ -82,9 +90,10 @@ header {
 
 /*column css */
 
+
 .col-2-1 h2 {
 	font-size: 6em;
-	padding-left: 15vmax;
+	padding-left: 2vmax;
 	color: #52666b;
 }
 
@@ -95,14 +104,14 @@ header {
 }
 
 .col-2-2 {
-	padding-top: 74px;
-	padding-left: 15vmax ;
+	
+	padding-left: 2vmax ;
 
 }
 
 [class*='col-3-'] img {
 	width: 100%;
-	border-radius: 50%;
+	/*border-radius: 50%;*/
 }
 
 /*join*/
@@ -172,6 +181,9 @@ header {
 .col-3-2 h2 {
 	text-align: center;
 	color:  #52666b ;
+	font-size: 5vmax;
+	margin-top: 0;
+
 }
 .col-3-2 p {
 	padding: 0 3vmax 0 3vmax;
@@ -180,16 +192,38 @@ header {
 
 /*about me contact*/
 
+/*.border h2 {
+	border-left: 5px solid #52666b ;
+}*/
+
 .contact-us {
 	background-color: rgba(167,197,189, 1);
+	clear: both;
 
+}
+.contact-us p {
+	width: 80%;
+	margin: auto;
+	font-size: 2vmax;
+	padding-top: 2vmax;
 }
 .contact-us h2 {
 	text-align: center;
 	color: #fff;
-	font-size: 3vmax;
+	font-size: 5vmax;
 	margin: 0;
-	padding-bottom: 10vmax;
+	padding-top: 2vmax;
+	
+}
+
+.contact-us article {
+	color:  #fff ;
+	padding: 0 5vmax 2vmax 5vmax;
+}
+
+.contact-us a {
+	text-decoration: none;
+	color: #fff;
 }
 
 footer p{
@@ -203,52 +237,121 @@ footer p{
 
 
 
+/*sponsor a child*/
+.sponsor-list h2 {
+	color: #52666b;
+	font-size: 3em;
+	padding-left: 0;
+}
+
+.sponsor-list p, li {
+	font-size: 2vmax;
+}
+
+.pad-right {
+	padding-right: 2vmax;
+	padding-left: 2vmax;
+}
+
+.col-full h2 {
+	text-align: center;
+	color: #52666b;
+	font-size: 3em;
+}
+
+.col-3-3 img, .col-3-1 img {
+	padding: 0 3vmax 3vmax;
+}
+
+
+
+
 @media (min-width: 768px) {
 
+	.navbar {
+	font-weight: 500;
+	text-align: right;
+	background-color: rgba(0,0,0,0);
+
+	}
+	.top {
+		margin-top: 2vmax;
+	}
+	.col-full {
+	width: 100%;
+	clear: both;
+	}
+
+	.wrapper {
+		display: flex;
+		clear: both;
+		width: 80%;
+		margin: 2vmax auto;
+	}
+
+	.padding-left {
+		padding-left: 15vmax;
+	}
+
+	.padding-top {
+		padding-top: 74px;
+	}
 
 	.footer {
 		clear: both;
 	}
 
-	
+	.sponsor-page h2 {
+		margin: 0;
+	}
 
 	.col-2-1 {
 		float: left;
 		width: 50%;
-		
-
+		margin: 0 auto;
 	}
 
 	.col-2-2 {
 		float: right;
 		width: 50%;
-		padding-left: 0;
+		margin: 0 auto;
+		
 		
 
 	}
 
+
 	[class*='col-3-'] {
-		width: 33.333%;
 		margin-top: 5vmax;
 
 
 	}
 	.col-3-1 {
 		float: left;
-		
+		width: 40%;
 	}
 
 	.col-3-2 {
-		float: center;
+		float: right;
 		display: inline-block;
+		width: 60%; 
 		
 	}
 
 	.col-3-3 {
 		float: right;
-		
 	}
 
+	
 
+	.navbar a {
+		display: inline-block;
+	}
+	.col-4 {
+		width: 25%;
+		float: left;
+
+	
+	}	
 	
 }
