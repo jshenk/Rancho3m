@@ -158,9 +158,10 @@ header {
 .button {
 	/*background-color:rgba(255, 153, 0, 1);*/
 	background-color: rgba(235,123,89,1);
-	padding: 10px;
+	padding: 20px;
+	border-radius: 8px;
 	width: 40%;
-	font-size: 3vmax;
+	font-size: 2em;
 	color: #fff ;
 	position: relative;
 	font-family: 'Roboto', sans-serif;
@@ -224,6 +225,12 @@ header {
 .contact-us a {
 	text-decoration: none;
 	color: #fff;
+	font-weight: bold;
+	font-style: italic;
+}
+
+.contact-us a:hover {
+	text-decoration: underline;
 }
 
 footer p{
